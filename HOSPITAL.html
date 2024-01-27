@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOSPITAL</title>
+    <link rel="stylesheet" href="HOSPITAL.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light  nav">
+    <a class="navbar-brand" href="#">
+        <img src="trace_3.svg" class="img" alt="logo" height="45" width="45">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link link shadow-lg text-white font-weight-bold " href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link shadow-lg text-white font-weight-bold " href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link shadow-lg text-white font-weight-bold " href="HLS.html">DOCTORS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link shadow-lg text-white font-weight-bold " href="HLS.html">DEPARTMENTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link shadow-lg text-white font-weight-bold " href="appointement.html">APPOINTMENT</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container ">
+    <div class="row">
+        <div class=" col-12">
+
+            <div class="animated-title text-center">
+                <div class="text-top">
+                    <div>
+                        <span>SHANMUKA HOSPITALS <img src="trace_3.svg"/></span>
+                        <span>Managing Your Health Journey, One Careful Step at a Time</span>
+                    </div>
+                </div>
+                <div class="text-bottom">
+                    <div>Healing Lives, Caring Smiles.
+                        <br> <span style="font-family: 'American Kestrel Semi-Straight',sans-serif; text-align:center;" >We are with you</span> </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<script>
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml10 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: true})
+        .add({
+            targets: '.ml10 .letter',
+            rotateY: [-90, 0],
+            duration: 1300,
+            delay: (el, i) => 45 * i
+        }).add({
+        targets: '.ml10',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script></head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</body>
+</html>

@@ -2,105 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOSPITAL</title>
     <link rel="stylesheet" href="HOSPITAL.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-
+</head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light  nav">
-    <a class="navbar-brand" href="#">
-        <img src="trace_3.svg" class="img" alt="logo" height="45" width="45">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link link shadow-lg text-white font-weight-bold " href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link shadow-lg text-white font-weight-bold " href="#">ABOUT</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link shadow-lg text-white font-weight-bold " href="HLS.html">DOCTORS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link shadow-lg text-white font-weight-bold " href="HLS.html">DEPARTMENTS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link shadow-lg text-white font-weight-bold " href="appointement.html">APPOINTMENT</a>
-            </li>
-
-        </ul>
-    </div>
-</nav>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="container ">
+<div class="container">
     <div class="row">
-        <div class=" col-12">
+        <div class="col-md-12">
 
             <div class="animated-title text-center">
                 <div class="text-top">
                     <div>
-                        <span>SHANMUKA HOSPITALS <img src="trace_3.svg"/></span>
+                        <!--<span>SHANMUKA HOSPITALS <img src="trace_3.svg"/></span> -->
                         <span>Managing Your Health Journey, One Careful Step at a Time</span>
                     </div>
                 </div>
                 <div class="text-bottom">
-                    <div>Healing Lives, Caring Smiles.
-                        <br> <span style="font-family: 'American Kestrel Semi-Straight',sans-serif; text-align:center;" >We are with you</span> </div>
+                    <div>Healing Lives, Caring Smiles &twoheadleftarrow;SHANMUKA HOSPITALS &twoheadrightarrow;.
+                        <br> <span style="font-family: 'American Kestrel Semi-Straight',sans-serif; text-align:right;">We are with you</span> </div>
                 </div>
-
             </div>
-
-
 
         </div>
     </div>
 </div>
-<script>
-    // Wrap every letter in a span
-    var textWrapper = document.querySelector('.ml10 .letters');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-    anime.timeline({loop: true})
-        .add({
-            targets: '.ml10 .letter',
-            rotateY: [-90, 0],
-            duration: 1300,
-            delay: (el, i) => 45 * i
-        }).add({
-        targets: '.ml10',
-        opacity: 0,
-        duration: 1000,
-        easing: "easeOutExpo",
-        delay: 1000
-    });
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script></head>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="trace_3.svg" alt="logo" width="15%"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link m-md-2" href="HOSPITAL.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-md-2" href="Aboutus.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-md-2" href="HLS.html">Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-md-2" href="departement.html">Department</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-MkIK03/vxgg7nOGIsrazeV5N73STVJiMh5YLJjueZU2If4GvADpMplK2WIbsftUe" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
